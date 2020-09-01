@@ -16,6 +16,10 @@ layout: base
         {% if site.compass.tagline %}
         <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
         {% endif %}
+
+        <div class="content">
+          {% include social.html %}
+        </div>
     </header>
     <main>
       {% if site.compass.include_content %}
@@ -24,4 +28,9 @@ layout: base
       </div>
       {% endif %}
     </main>
+    <news>
+      <div class="content">
+        {% include news.html %}
+      </div>
+    </news>
 </div>
